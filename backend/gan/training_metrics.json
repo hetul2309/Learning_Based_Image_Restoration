@@ -1,0 +1,50 @@
+{
+  "model_name": "Restoration GAN (Dense RRDB Generator + PatchGAN Discriminator)",
+  "gpus_used": 2,
+  "epochs": 5,
+  "batch_size": 32,
+  "loss_weights": {
+    "pixel_l1": 1.0,
+    "perceptual_vgg": 0.1,
+    "adversarial_lsgan": 0.001
+  },
+  "optimizer": "Adam (lr=1e-4)",
+  "history": {
+    "train_g_loss": [
+      0.2943,
+      0.2466,
+      0.2297,
+      0.2211,
+      0.2157
+    ],
+    "train_d_loss": [
+      0.0225,
+      0.015,
+      0.0066,
+      0.0048,
+      0.0046
+    ],
+    "val_psnr": [
+      19.58,
+      21.12,
+      21.25,
+      21.77,
+      22.13
+    ],
+    "val_ssim": [
+      0.6678,
+      0.7084,
+      0.7206,
+      0.7289,
+      0.734
+    ]
+  },
+  "test_results": {
+    "degraded_psnr": 13.9,
+    "degraded_ssim": 0.2371,
+    "restored_psnr": 22.09,
+    "restored_ssim": 0.7357,
+    "psnr_gain_db": 8.19,
+    "ssim_gain": 0.4985
+  }
+}

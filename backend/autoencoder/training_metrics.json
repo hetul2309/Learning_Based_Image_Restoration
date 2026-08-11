@@ -1,0 +1,49 @@
+{
+  "model_name": "Convolutional Autoencoder Restoration Network",
+  "gpus_used": 2,
+  "epochs": 5,
+  "batch_size": 64,
+  "loss_functions": [
+    "L1Loss",
+    "MSELoss"
+  ],
+  "optimizer": "Adam (lr=1e-4)",
+  "history": {
+    "train_loss": [
+      0.0768,
+      0.0658,
+      0.0629,
+      0.0611,
+      0.06
+    ],
+    "val_loss": [
+      0.0825,
+      0.065,
+      0.1199,
+      0.0644,
+      0.057
+    ],
+    "val_psnr": [
+      19.88,
+      21.63,
+      18.8,
+      22.04,
+      22.78
+    ],
+    "val_ssim": [
+      0.6457,
+      0.6941,
+      0.5964,
+      0.6981,
+      0.7265
+    ]
+  },
+  "test_results": {
+    "degraded_psnr": 13.9,
+    "degraded_ssim": 0.2372,
+    "restored_psnr": 22.74,
+    "restored_ssim": 0.728,
+    "psnr_gain_db": 8.84,
+    "ssim_gain": 0.4908
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "model_name": "Restormer Transformer Restoration Network",
+  "gpus_used": 2,
+  "epochs": 5,
+  "batch_size": 32,
+  "loss_functions": [
+    "L1Loss",
+    "MSELoss"
+  ],
+  "optimizer": "Adam (lr=1e-4)",
+  "history": {
+    "train_loss": [
+      0.0627,
+      0.0494,
+      0.0465,
+      0.0447,
+      0.0436
+    ],
+    "val_loss": [
+      0.053,
+      0.0476,
+      0.0445,
+      0.0436,
+      0.0433
+    ],
+    "val_psnr": [
+      23.45,
+      24.38,
+      25.0,
+      25.21,
+      25.46
+    ],
+    "val_ssim": [
+      0.7114,
+      0.7332,
+      0.7473,
+      0.7553,
+      0.7584
+    ]
+  },
+  "test_results": {
+    "degraded_psnr": 13.9,
+    "degraded_ssim": 0.2371,
+    "restored_psnr": 25.43,
+    "restored_ssim": 0.76,
+    "psnr_gain_db": 11.54,
+    "ssim_gain": 0.5229
+  }
+}
