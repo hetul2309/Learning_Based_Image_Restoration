@@ -22,3 +22,16 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Datasets & Large Data Archives (keep repo lightweight, download via Kaggle/Drive)
+degraded_dataset/
+backend/degraded_dataset/
+*.zip
+*.tar.gz
+*.tar
+*.rar
+
